@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/AFPro-Web/static/css/main.795064b7.css",
-    "main.js": "/AFPro-Web/static/js/main.979f20b7.js",
-    "static/media/logo.png": "/AFPro-Web/static/media/logo.68e1cbfd749f817ceb6f.png",
-    "static/media/bootstrap-icons.woff?": "/AFPro-Web/static/media/bootstrap-icons.1295669cd4e305c97f2c.woff",
-    "static/media/bootstrap-icons.woff2?": "/AFPro-Web/static/media/bootstrap-icons.92ea18a81d737146ff04.woff2",
-    "index.html": "/AFPro-Web/index.html",
-    "main.795064b7.css.map": "/AFPro-Web/static/css/main.795064b7.css.map",
-    "main.979f20b7.js.map": "/AFPro-Web/static/js/main.979f20b7.js.map"
+    "main.css": "./static/css/main.d1443d0f.css",
+    "main.js": "./static/js/main.1f6842f7.js",
+    "static/media/logo.png": "./static/media/logo.68e1cbfd749f817ceb6f.png",
+    "static/media/bootstrap-icons.woff?": "./static/media/bootstrap-icons.1295669cd4e305c97f2c.woff",
+    "static/media/bootstrap-icons.woff2?": "./static/media/bootstrap-icons.92ea18a81d737146ff04.woff2",
+    "index.html": "./index.html",
+    "main.d1443d0f.css.map": "./static/css/main.d1443d0f.css.map",
+    "main.1f6842f7.js.map": "./static/js/main.1f6842f7.js.map"
   },
   "entrypoints": [
-    "static/css/main.795064b7.css",
-    "static/js/main.979f20b7.js"
+    "static/css/main.d1443d0f.css",
+    "static/js/main.1f6842f7.js"
   ]
 }
