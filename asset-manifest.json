@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/AFPro-Web/static/css/main.ad9fdd99.css",
+    "main.css": "/AFPro-Web/static/css/main.6aa24f74.css",
     "main.js": "/AFPro-Web/static/js/main.1b9ec66c.js",
     "index.html": "/AFPro-Web/index.html",
-    "main.ad9fdd99.css.map": "/AFPro-Web/static/css/main.ad9fdd99.css.map",
+    "main.6aa24f74.css.map": "/AFPro-Web/static/css/main.6aa24f74.css.map",
     "main.1b9ec66c.js.map": "/AFPro-Web/static/js/main.1b9ec66c.js.map"
   },
   "entrypoints": [
-    "static/css/main.ad9fdd99.css",
+    "static/css/main.6aa24f74.css",
     "static/js/main.1b9ec66c.js"
   ]
 }
