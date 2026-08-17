@@ -3,7 +3,6 @@ import React, { useEffect, useState, useMemo } from "react";
 import { format, parse, parseISO, isValid } from "date-fns";
 import { ptBR } from "date-fns/locale";
 import { Modal, Button } from "react-bootstrap";
-import JornadaPage from './pages/JornadaPage';
 
 const WEB_APP_URL =
   "https://script.google.com/macros/s/AKfycbwJoUCP0ijIAvO1Nws8QxTibo5bMTBhaCk9tN_8SkBD9heskaiQXj96LtgPiZURSHue/exec";
