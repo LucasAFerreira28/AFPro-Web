@@ -6,7 +6,7 @@ import TopBar from './components/TopBar';
 import PointsPage from './pages/PointsPage';
 import HistoryPage from './pages/HistoryPage';
 import NovaColetaPage from './pages/NovaColetaPage';
-import JornadaPage from './page/JornadaPage';
+import JornadaPage from './pages/JornadaPage';
 
 export default function App(){
   return (
