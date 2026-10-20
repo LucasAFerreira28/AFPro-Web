@@ -1,8 +1,15 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import logo from '../assets/logo.png'; // coloque sua imagem nesta pasta
+import logo from '../assets/logo.png';
 
-export default function Sidebar(){
+export default function Sidebar() {
+  const links = [
+    { to: '/pontos', label: 'Pontos Atuais', icon: 'bi bi-list-check' },
+    { to: '/historico', label: 'Histórico de Coletas', icon: 'bi bi-archive' },
+    { to: '/nova', label: 'Nova Coleta', icon: 'bi bi-upload' },
+    { to: '/jornada', label: 'Jornada', icon: 'bi bi-graph-up-arrow' },
+  ];
+
   return (
     <aside className="sidebar">
       <div className="brand">
@@ -11,25 +18,22 @@ export default function Sidebar(){
         <small>Painel de Coletas</small>
       </div>
 
-      <nav>
-        <NavLink to="/pontos" className={({isActive}) => isActive ? 'nav-item active' : 'nav-item'}>
-          <i className="bi bi-list-check"></i> Pontos Atuais
-        </NavLink>
-        <NavLink to="/historico" className={({isActive}) => isActive ? 'nav-item active' : 'nav-item'}>
-          <i className="bi bi-archive"></i> Histórico de Coletas
-        </NavLink>
-        <NavLink to="/nova" className={({isActive}) => isActive ? 'nav-item active' : 'nav-item'}>
-          <i className="bi bi-upload"></i> Nova Coleta
-        </NavLink>
-        <NavLink to="/jornada" className={({isActive}) => isActive ? 'nav-item active' : 'nav-item'}>
-          <i className="bi bi-upload"></i> Jornada
-        </NavLink>
+      <nav className="sidebar-nav" aria-label="Menu principal">
+        {links.map(({ to, label, icon }) => (
+          <NavLink
+            key={to}
+            to={to}
+            className={({ isActive }) => (isActive ? 'nav-item active' : 'nav-item')}
+          >
+            <i className={icon}></i>
+            <span>{label}</span>
+          </NavLink>
+        ))}
       </nav>
 
       <div className="sidebar-footer">
-        <small>🟢 Conectado ao Sheets</small>
+        <span className="status-pill online">● Conectado ao Sheets</span>
       </div>
     </aside>
   );
 }
-

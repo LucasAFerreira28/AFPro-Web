@@ -2,12 +2,16 @@ import { API_BASE } from './config';
 
 async function handleGet(params = {}) {
   const url = new URL(API_BASE);
-  Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
+  Object.entries(params).forEach(([key, value]) => {
+    if (value !== undefined && value !== null && value !== '') {
+      url.searchParams.append(key, String(value));
+    }
+  });
 
   const res = await fetch(url.toString(), {
-    method: "GET",
-    mode: "cors",
-    headers: { "Accept": "application/json" }
+    method: 'GET',
+    mode: 'cors',
+    headers: { Accept: 'application/json' },
   });
 
   const text = await res.text();
@@ -20,10 +24,10 @@ async function handleGet(params = {}) {
 
 async function handlePost(body) {
   const res = await fetch(API_BASE, {
-    method: "POST",
-    mode: "cors",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(body)
+    method: 'POST',
+    mode: 'cors',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(body),
   });
 
   const text = await res.text();
@@ -52,5 +56,5 @@ export const api = {
   },
   replaceUnimed(rows) {
     return handlePost({ action: 'replaceUnimed', sheetName: 'UNIMED', rows });
-  }
+  },
 };
